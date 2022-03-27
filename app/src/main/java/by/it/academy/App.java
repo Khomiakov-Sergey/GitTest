@@ -8,7 +8,13 @@ import java.time.LocalDateTime;
 
 public class App {
     public String getGreeting() {
-        return String.format("Hello World! Today is %s", LocalDate.now());
+        return String.format("Hello World! Today is %s. Your the luckiest month is %s", LocalDate.now(), getRandomMonth());
+    }
+
+    public String getRandomMonth(){
+        String[] months = {"January", "February", "March", "April", "May", "June", "July",
+                           "August", "September", "October", "November", "December"};
+        return months[(int) (Math.random() * 12)];
     }
 
     public static void main(String[] args) {
