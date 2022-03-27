@@ -4,11 +4,16 @@
 package by.it.academy;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.util.Random;
 
 public class App {
     public String getGreeting() {
-        return String.format("Hello World! Today is %s", LocalDate.now());
+        return String.format("Hello World! Today is %s. Your lucky number is %d", LocalDate.now(), getRandomNumber());
+    }
+
+    public static int getRandomNumber() {
+        Random random = new Random();
+        return random.nextInt(6) + 1;
     }
 
     public static void main(String[] args) {
