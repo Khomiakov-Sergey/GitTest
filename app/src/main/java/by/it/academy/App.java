@@ -17,6 +17,7 @@ public class App {
         return random.nextInt(6) + 1;
     }
 
+    ззззз
     public String getRandomMonth(){
         String[] months = {"January", "February", "March", "April", "May", "June", "July",
                            "August", "September", "October", "November", "December"};
